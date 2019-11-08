@@ -17,6 +17,34 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -28,21 +56,17 @@
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
         
 
     
 
     
         
-    
-        
-    
-        
-    
-        
-    
-        
-    
+        <link rel="stylesheet" href="../style/style.css">
         
     
 
@@ -466,7 +490,7 @@
                                 
                                 <h1 id="js&#x76F8;&#x5173;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#x96C6;&#x5408;">Js&#x76F8;&#x5173;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#x96C6;&#x5408;</h1>
 <h4 id="&#x63A7;&#x5236;&#x59D3;&#x540D;&#x4E2D;&#x95F4;&#x53D8;">&#x63A7;&#x5236;&#x59D3;&#x540D;&#x4E2D;&#x95F4;&#x53D8;*</h4>
-<pre><code>function protectionName(name) {
+<pre class="language-"><code>function protectionName(name) {
     return [...name]
         .map((item, index, arr) =&gt; {
             return Math.floor(arr.length / 2) === index ? &apos; * &apos; : item;
@@ -474,7 +498,7 @@
      .join(&apos;&apos;);
 }
 </code></pre><h4 id="&#x5012;&#x8BA1;&#x65F6;">&#x5012;&#x8BA1;&#x65F6;</h4>
-<pre><code>function getEndTime(endTime){
+<pre class="language-"><code>function getEndTime(endTime){
     var startDate=new Date();  //&#x5F00;&#x59CB;&#x65F6;&#x95F4;&#xFF0C;&#x5F53;&#x524D;&#x65F6;&#x95F4;
     var endDate=new Date(endTime); //&#x7ED3;&#x675F;&#x65F6;&#x95F4;&#xFF0C;&#x9700;&#x4F20;&#x5165;&#x65F6;&#x95F4;&#x53C2;&#x6570;
     var t=endDate.getTime()-startDate.getTime();  //&#x65F6;&#x95F4;&#x5DEE;&#x7684;&#x6BEB;&#x79D2;&#x6570;
@@ -490,7 +514,7 @@
 
 getEndTime(&apos;2018/8/8 8:0:0&apos;) // &quot;&#x5269;&#x4F59;&#x65F6;&#x95F4;172&#x5929; 12&#x5C0F;&#x65F6; 10 &#x5206;&#x949F;47 &#x79D2;&quot;
 </code></pre><h4 id="js&#x65E5;&#x671F;&#x591A;&#x5C11;&#x5C0F;&#x65F6;&#x524D;&#xFF0C;&#x591A;&#x5C11;&#x5206;&#x949F;&#x524D;&#xFF0C;&#x591A;&#x5C11;&#x79D2;&#x524D;">js&#x65E5;&#x671F;&#x591A;&#x5C11;&#x5C0F;&#x65F6;&#x524D;&#xFF0C;&#x591A;&#x5C11;&#x5206;&#x949F;&#x524D;&#xFF0C;&#x591A;&#x5C11;&#x79D2;&#x524D;</h4>
-<pre><code>function getDateDiff(dateTimeStamp){
+<pre class="language-"><code>function getDateDiff(dateTimeStamp){
     var minute = 1000 * 60;
     var hour = minute * 60;
     var day = hour * 24;
@@ -523,7 +547,7 @@ getEndTime(&apos;2018/8/8 8:0:0&apos;) // &quot;&#x5269;&#x4F59;&#x65F6;&#x95F4;
     return result;
 }
 </code></pre><h4 id="&#x63A7;&#x5236;&#x59D3;&#x540D;&#x4E2D;&#x95F4;&#x53D8;">&#x63A7;&#x5236;&#x59D3;&#x540D;&#x4E2D;&#x95F4;&#x53D8;*</h4>
-<pre><code>function protectionName(name) {
+<pre class="language-"><code>function protectionName(name) {
     return [...name]
         .map((item, index, arr) =&gt; {
             return Math.floor(arr.length / 2) === index ? &apos; * &apos; : item;
@@ -531,7 +555,7 @@ getEndTime(&apos;2018/8/8 8:0:0&apos;) // &quot;&#x5269;&#x4F59;&#x65F6;&#x95F4;
      .join(&apos;&apos;);
 }
 </code></pre><h4 id="&#x6D4F;&#x89C8;&#x5668;&#x5224;&#x65AD;">&#x6D4F;&#x89C8;&#x5668;&#x5224;&#x65AD;</h4>
-<pre><code>function parseUA() {
+<pre class="language-"><code>function parseUA() {
   var u = navigator.userAgent;
   var u2 = navigator.userAgent.toLowerCase();
   return { //&#x79FB;&#x52A8;&#x7EC8;&#x7AEF;&#x6D4F;&#x89C8;&#x5668;&#x7248;&#x672C;&#x4FE1;&#x606F;
@@ -565,7 +589,7 @@ if (!ua.mobile) {
   location.href = &apos;./pc.html&apos;;
 }
 </code></pre><h4 id="&#x83B7;&#x53D6;&#x624B;&#x673A;&#x7C7B;&#x578B;">&#x83B7;&#x53D6;&#x624B;&#x673A;&#x7C7B;&#x578B;</h4>
-<pre><code>function browser(){
+<pre class="language-"><code>function browser(){
     var u = navigator.userAgent;
     var isAndroid = u.indexOf(&apos;Android&apos;) &gt; -1 || u.indexOf(&apos;Adr&apos;) &gt; -1; // android&#x7EC8;&#x7AEF;
     var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); // ios&#x7EC8;&#x7AEF;
@@ -575,7 +599,7 @@ if (!ua.mobile) {
     return version;
 }
 </code></pre><h4 id="&#x83B7;&#x53D6;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x5730;&#x5740;">&#x83B7;&#x53D6;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x5730;&#x5740;</h4>
-<pre><code>function getRootPath(){
+<pre class="language-"><code>function getRootPath(){
     // &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7F51;&#x5740;
     var curWwwPath=window.document.location.href;
     // &#x83B7;&#x53D6;&#x4E3B;&#x673A;&#x5730;&#x5740;&#x4E4B;&#x540E;&#x7684;&#x76EE;&#x5F55;
@@ -588,14 +612,16 @@ if (!ua.mobile) {
     return (localhostPaht+projectName);
 }
 </code></pre><h4 id="&#x9650;&#x5236;&#x5B57;&#x7B26;&#x4E2A;&#x6570;">&#x9650;&#x5236;&#x5B57;&#x7B26;&#x4E2A;&#x6570;</h4>
-<pre><code>$(&quot;.ltxt&quot;).each(function() {
+<pre class="language-"><code>$(&quot;.ltxt&quot;).each(function() {
     var maxwidth = 64;
     if($(this).text().length &gt; maxwidth) {
         $(this).text($(this).text().substring(0, maxwidth));
         $(this).html($(this).html() + &quot;......&quot;);
     }
 });
-</code></pre>
+</code></pre><footer class="page-footer"><span class="copyright">Copyright &#xA9; &#x5F7C;&#x5CB8;&#x5929;&#x5DE5;&#x4F5C;&#x5BA4; 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-11-07 15:04:16
+</span></footer>
                                 
                                 </section>
                             
@@ -634,7 +660,7 @@ if (!ua.mobile) {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1-1 JS","level":"2.1.1","depth":2,"next":{"title":"1-2 CSS","level":"2.1.2","depth":2,"path":"page/css.md","ref":"page/css.md","articles":[]},"previous":{"title":"1-代码片段","level":"2.1","depth":1,"ref":"","articles":[{"title":"1-1 JS","level":"2.1.1","depth":2,"path":"page/js.md","ref":"page/js.md","articles":[]},{"title":"1-2 CSS","level":"2.1.2","depth":2,"path":"page/css.md","ref":"page/css.md","articles":[]},{"title":"1-3 Eruda","level":"2.1.3","depth":2,"path":"page/eruda.md","ref":"page/eruda.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/liu-ziting"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Liuziting","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"wiki","language":"zh-hans","links":{"sidebar":{"我的博客":"https://www.lihail.cn"}},"gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"page/js.md","mtime":"2019-11-07T07:04:16.584Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-08T01:20:25.694Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1-1 JS","level":"2.1.1","depth":2,"next":{"title":"1-2 CSS","level":"2.1.2","depth":2,"path":"page/css.md","ref":"page/css.md","articles":[]},"previous":{"title":"1-代码片段","level":"2.1","depth":1,"ref":"","articles":[{"title":"1-1 JS","level":"2.1.1","depth":2,"path":"page/js.md","ref":"page/js.md","articles":[]},{"title":"1-2 CSS","level":"2.1.2","depth":2,"path":"page/css.md","ref":"page/css.md","articles":[]},{"title":"1-3 Eruda","level":"2.1.3","depth":2,"path":"page/eruda.md","ref":"page/eruda.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["github","tbfed-pagefooter@^0.0.1","prism@^2.1.0","prism-themes@^0.0.2","back-to-top-button","code","splitter","pageview-count","expandable-chapters","theme-comscore"],"styles":{"website":"style/style.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © 彼岸天工作室 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{},"github":{"url":"https://github.com/liu-ziting"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"back-to-top-button":{},"pageview-count":{},"prism-themes":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"expandable-chapters":{}},"theme":"default","author":"Liuziting","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"wiki","language":"zh-hans","links":{"sidebar":{"我的博客":"https://www.lihail.cn"}},"gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"page/js.md","mtime":"2019-11-07T07:04:16.584Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-08T02:28:49.338Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -645,6 +671,26 @@ if (!ua.mobile) {
     
         
         <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
         
     
         
@@ -669,6 +715,10 @@ if (!ua.mobile) {
     
         
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
         
     
 
