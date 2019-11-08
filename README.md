@@ -41,6 +41,9 @@ Wiki
 ├── book.json		配置文件数据(可选)
 ├── README.md		简介-书籍的简单介绍(必填)
 ├── SUMMARY.md		文章目录配置
+├── AboutUs.md		介绍
+├── style		自定义css
+├── docs		打包生成的文件夹
 └── page		存放单个文件（章节）
 
 ```		
