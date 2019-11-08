@@ -25,7 +25,10 @@
     
     # 进入文件夹
     cd Wiki
-    
+	
+    # 安装依赖
+    gitbook install
+	
     # 开启本地服务器
     gitbook serve
     

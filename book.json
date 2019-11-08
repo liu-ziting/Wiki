@@ -12,14 +12,29 @@
             "我的博客": "https://www.lihail.cn"
         }
     },
+	"styles": {
+	    "website": "style/style.css"
+	},
     "plugins": [
-        "github"
+        "github",
+		"tbfed-pagefooter@^0.0.1",
+		"prism@^2.1.0",
+		"prism-themes@^0.0.2",
+		"back-to-top-button",
+		"code",
+		"splitter",
+		"pageview-count",
+		"expandable-chapters",
+		"theme-comscore"
     ],
-	
-    "pluginsConfig": {
+	"pluginsConfig": {
         "github": {
             "url": "https://github.com/liu-ziting"
-        }
-
+        },
+		"tbfed-pagefooter": {
+			"copyright": "Copyright © 彼岸天工作室 2019",
+			"modify_label": "该文件修订时间：",
+			"modify_format": "YYYY-MM-DD HH:mm:ss"
+		}
     }
 }
