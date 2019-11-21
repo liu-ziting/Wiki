@@ -19,7 +19,3 @@
 	* [4-3 影视动画](page/software/3.md)
 	* [4-4 开发编程](page/software/4.md)
 	* [4-5 数据分析](page/software/5.md)
-* 5-文章教程
-	* [5-1 微信公众号开发](page/article/1.md)
-    * [5-2 钉钉微应用接入](page/article/2.md)
-	* [5-3 Hexo博客搭建方法](page/article/3.md)
